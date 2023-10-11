@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHOW detail</title>
+    <%- include('./show-style.ejs') %> 
+  </head>
+  <body>
+    <h1><%= village.name %></h1>
+    <ul>
+      <li>Địa chỉ: <%= village.address %> </li>
+      <li>Lịch Sử: <%= village.history %></li>
+      <li>Thời gian hình thành: <%= village.founded_date %></li>
+      <li>Nguồn gốc, tổ nghề: <%= village.origin %></li>
+      <li>Giai đoạn nổi bật: <%= village.golden_era %></li>
+      <li>Sản phẩm: <%= village.product %></li>
+      <li>Số người đang hoạt động: <%= village.num_working_people %></li>
+    </ul>
+    <a href="/">back</a>
+    <!-- <a href="/villages/<%= village._id %>/edit">Edit</a> -->
+    <!-- <form action="/villages/<%= village._id%>?_method=DELETE" method="POST">
+      <button>Delete</button>
+    </form> -->
+  </body>
+</html>
